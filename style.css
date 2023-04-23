@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161623;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.card{
+    position: relative;
+    text-align: center;
+    width: 350px;
+    height: 500px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(2em);
+    backdrop-filter: blur(2em);
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 10;
+}
+.circle-1{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(-45deg, #753a88, #cc2b5e);
+    border-radius: 50%;
+    top: 60%;
+    left: 30%;
+    animation: float 2s infinite ease-in-out;
+}
+.circle-2{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(-45deg, #2193b0, #6dd5ed);
+    top: 5%;
+    left: 50%;
+    border-radius: 50%;
+    animation: float 2s 1s infinite ease-in-out;
+}
+.card .user{
+    max-width: auto;
+    height: 100%;
+}
+.card .user{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid#fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+}
+.card h1{
+    font-size: 1rem;
+}
+.card .text1{
+    font-weight: 300;
+    font-size: 16px;
+}
+.card .line{
+    width: 90%;
+    height: 2px;
+    background: #fff;
+    margin: 20px auto;
+}
+.card .text2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.card .btn{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    color: #3e3e3e;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 6px;
+    transform: translateX(-50%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+.card .tags{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.card .tags a{
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    border-radius: 50%;
+    font-size: 25px;
+}
+.card .tags a i.fa-facebook{
+    color: #3b5998;
+}
+.card .tags a i.fa-twitter{
+    color: #00acee;
+}
+.card .tags a i.fa-instagram{
+    color: #E1306C;
+}
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
